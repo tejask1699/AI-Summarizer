@@ -14,12 +14,6 @@ The project follows a **microservices architecture**, combining **Node.js** and 
 
 The **AI microservice**, built with **Python (FastAPI)**, integrates **LangChain and OpenAI API** to perform advanced natural language processing tasks. It handles document summarization, embedding generation, and semantic search. Embeddings are stored in a vector database such as **PostgreSQL with pgvector** or **MongoDB Atlas Vector Search**, enabling semantic document retrieval and question answering with high accuracy.  
 
-On the **frontend**, a **React.js (or Next.js)** application offers an intuitive and responsive user interface. Users can sign up, upload documents, view AI-generated summaries, study flashcards, and interact with the knowledge base. The UI is styled with **TailwindCSS and shadcn/ui**, ensuring a modern look and smooth user experience across devices.  
-
-This project is designed to demonstrate the **practical application of AI in education, research, and professional workflows**. It is particularly useful for students summarizing lecture notes, researchers analyzing academic papers, and professionals extracting insights from lengthy reports or meeting transcripts.  
-
-By combining **AI-powered text processing** with a robust **full-stack architecture**, the AI Summarizer & Knowledge Base showcases expertise in **React.js, Node.js, Prisma, PostgreSQL/MongoDB, Python FastAPI, LangChain, and microservices integration**—making it both a valuable learning experience and a standout addition to any portfolio.  
-
 ---
 
 ## 🚀 Features
