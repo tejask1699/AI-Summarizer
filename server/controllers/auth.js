@@ -7,11 +7,11 @@ const prisma = new PrismaClient();
 // 🔐 Login
 const login = async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const { email, password } = req.body;
 
     // Find user in DB
     const user = await prisma.user.findUnique({
-      where: { username },
+      where: { email }
     });
 
     if (!user) {
