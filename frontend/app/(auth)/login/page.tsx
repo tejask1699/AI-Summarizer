@@ -35,12 +35,9 @@ const Login = () => {
             if (res.status === 200) {
                 const Userdata = await res.json()
                 localStorage.setItem("token", Userdata.token)
-                localStorage.setItem("userID", Userdata.id)
-                localStorage.setItem("userName", Userdata.name)
-                localStorage.setItem("role", Userdata.role)
                 setLoading(false)
                 toast.success("Login successful")
-                Userdata.role === 'admin' ? router.push('/admin/dashboard') : router.push('/user/dashboard')
+                router.push('/landing-page')
 
             } else {
                 toast.error("Login failed. Please check your credentials.")
